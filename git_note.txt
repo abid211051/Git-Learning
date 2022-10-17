@@ -1,0 +1,155 @@
+GIT command
+Untracked(U), unmodified(commit), Modified(M), staged(A)
+
+COMMOND LINE:
+
+			//GIT CONFIG\\
+
+	>> git config --global user.name or user.email    -(for set and check name and email)
+
+
+
+			//GIT INITIALIZE\\
+
+	>> git init    -(for initalize main git folder) 
+
+
+
+			//GIT STATUS\\
+
+	>> git status    -(for check file current stage)
+
+
+
+			//GIT STAGED(A)\\
+
+	>> git add file_name   -(for shift file to stage(A))
+
+	>> git add -A   -(for stage all file)
+
+	>> git add .   -(for stage a folder(need to go to those folder by cd folder name))
+
+
+			//CHAGE DIRECTORY\\
+
+	>> cd folder_name  -(for go to selected folder in same drive)
+
+	>> cd ..   -(for back to previous directory)
+
+
+		
+			//RESET GIT FILE TO UNTRACKED\\
+
+	>> git reset   -(for all file to reset)
+
+	>> git reset file name   -(for reset specific file)
+
+	>> git reset --hard   -(for reset all file to previos state)
+
+
+			
+			//COMMIT OR UNMODIFIED FILE\\
+
+	>> "git commit" then "press i" then "Initial commit" then "press esc" then "press :" then "wq"   -(for all commit or unmodified from staged)
+	
+	>> git commit -m "comment"   -(for commit or unmodified from staged)
+
+
+			
+			//CHECKOUT OR BRING BACK REMOVED FILE\\
+
+	>> git checkout -f   -(for bring back all removed file)
+
+	>> git checkout file name   -(for back removed file)
+
+
+
+			//CHECK LOG OR CHANGE OF FILE\\
+
+	>> git log   -(for check previous commit)
+
+	>> git log -p -1   -(for check last one commit)
+
+
+
+			//DIFFERCENCE BETWEEN PREVIOUS STAGED\\
+
+	>> git diff    -(for check differcence for unstaged)
+
+	>> git diff --staged   -(for check differcence from staged)
+
+
+
+			//vim terminal to bash\\
+
+	>> press Q   -(for back to bash terminal)
+
+
+
+			//REMOVE FILE\\
+
+	>> git rm file name -f    -(for force remove a file)
+
+
+
+			//GIT IGNORE\\
+
+	>> Open git ignore file and commit it:-
+		>"touch .gitignore"  -(opening gitignore file) then "git add -A"  -(sending to stage gitignore) then 'git commit -m "comment" '  -(for commit or unmodifed the file)
+
+	>> In gitignore file:-  ( write those file, folder, path, extension name and save it to ignore those file)
+		> file name.type  -(for ignore a file)
+		> folder name/  -(for ignore a folder)
+		> folder name/file name.type  -(for ignore a file from specific folder)
+		> *.jpg, *.png, *.cpp   -(for ignore specific extension file)
+
+
+
+			//GIT BRANCH\\
+
+	>> git branch branch_name   -(for create a branch)
+	
+	>> git checkout branch_name   -(for switch to another branch)
+	
+	>> "git add -A" then 'git commit -m "cmnt" '   -(for commit a changed file on that branch)
+
+
+
+			//GIT MERGE\\
+
+	>> git merge merging_brach_name -m "cmnt"   -(for merge a branch with another)
+
+
+
+			//GIT HUB\\
+
+	>> ///create a repository in github\\\   -(for create a repository in github)
+	
+	>> /// Then copy the https link of that repository\\\   -(copy the link for connect with local server/pc file)
+
+	>> /// In terminal write "git remote add origin paste_the_url"\\\   -(write this command and paste the url for connect)
+
+			
+
+			//AFTER CONNECT\\
+			//GIT PUSH\\
+
+	>> git push origin branch_name  -(for push the file from local to remote or github)
+
+
+
+			//GIT FETCH\\
+
+	>> git fetch
+	
+	>> git fetch origin branch_name   -(for fetch the new data to local from github with showing)
+
+
+
+			//GIT PULL\\
+
+	>> git pull
+	
+	>> git pull origin branch_name --allow-unrelated-histories   -(for pull information from github)
+
+	>> git pull origin branch_name
