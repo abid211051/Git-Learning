@@ -1,7 +1,7 @@
 GIT command
 Untracked(U), unmodified(commit), Modified(M), staged(A)
 
-COMMOND LINE:
+COMMAND LINE:
 
 			//GIT CONFIG\\
 
